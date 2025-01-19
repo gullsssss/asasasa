@@ -131,6 +131,9 @@ imgui.OnFrame(function() return WinState[0] end, function(player)
              if imgui.Button(fa.SHOP .. u8(' Центральный рынок'), imgui.ImVec2(300, 40)) then
             teleportToCoordinates(1128.53, -1426.10, 15.80)
         end
+	if imgui.Button(fa.SHOP .. u8('тест ипать'), imgui.ImVec2(300,40)) then
+		sendCommand('/try aaaa')
+	end
             if imgui.Text(u8'Изпользовать только на улице') then
             end
         end
